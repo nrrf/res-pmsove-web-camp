@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+:root {
+    --color-pink: pink;
+    --color-accent: #003366;
+}
+
+body {
+    background-color: var(--color-pink);
+    font-family: 'Lato', sans-serif;
+}
+
+#header {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    background-color: var(--color-accent);
+    min-height: 50px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+img {
+    height: 30px;
+    width: auto;
+}
+
+a {
+    color: var(--color-pink);
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+#form {
+    color: var(--color-accent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    margin-top: 50px;
+}
+
+.page-style {
+    outline: none;
+    border-radius: 3px;
+    border: 0px;
+    padding: 10px;
+    background-color: var(--color-accent);
+    color: var(--color-pink);
+}
+
+input::placeholder {
+    color: var(--color-pink);
+}
+
+.btn {
+    margin-top: 10px
+}
+
+.btn:hover {
+    background-color: #1b262c;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Columna {
+    background: var(--color-accent);
+    color: var(--color-pink);
+    border: 1px solid #838383;
+    margin: 0px auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px #838383;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+#caracteristicas h2 {
+    color: var(--color-accent);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+.Precio {
+    font-size: 50px;
+    color: #1dd3bd;
+}
+
+.BTN_precio {
+    background: #F37036;
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.BTN_precio:hover {
+    background: #F5530B;
+}
+
+#precios {
+    margin: 0px auto;
+    /*width: 500px;*/
+    width: 90%;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descripcion {
+    padding: 20px;
+    width: 50%;
+}
+
+@media(max-width: 1030px) {
+    .Columna {
+        width: 40%;
+    }
+}
+
+@media (max-width: 530px) {
+    header {
+        flex-direction: column;
+    }
+    a {
+        display: block;
+        padding: 5px;
+    }
+    #form {
+        height: 300px;
+    }
+    .Columna {
+        width: 100%;
+    }
+}
