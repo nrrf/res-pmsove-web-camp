@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+:root {
+    --color-pink: pink;
+    --color-accent: #003366;
+}
+
+.white {
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+body {
+    background-color: var(--color-pink);
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    color: var(--color-pink);
+    text-decoration: none;
+}
+
+nav ul {
+    padding: 10px;
+    list-style: none;
+}
+
+li {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 290px;
+    height: 100%;
+    background-color: var(--color-accent);
+    z-index: 2;
+}
+
+#main-doc {
+    color: var(--color-accent);
+    display: flex;
+    position: absolute;
+    left: 340px;
+    padding-left: 20px;
+    flex-direction: column;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+section header {
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+code {
+    display: block;
+    white-space: pre;
+    background-color: #dddddd;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 1000px) {
+    #navbar {
+        width: 100%;
+        height: 100px;
+        z-index: 2;
+    }
+    nav ul li {
+        display: inline;
+        padding: 10px;
+    }
+    #main-doc {
+        top: 200px;
+        left: 0;
+    }
+}
