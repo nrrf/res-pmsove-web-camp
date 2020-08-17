@@ -81,12 +81,12 @@ li a:hover {
     background-color: var(--color-accent);
     padding: 10%;
     color: white;
-    text-decoration: underline;
 }
 
 #title-project {
     font-size: 40px;
     padding-bottom: 50px;
+    text-decoration: underline;
 }
 
 .wrap-project {
@@ -107,6 +107,7 @@ div a {
 
 div a p {
     padding: 20px;
+    font-weight: bold;
 }
 
 a img {
@@ -133,6 +134,7 @@ a img {
 i {
     padding-top: 50px;
     background-color: black;
+    position: relative;
 }
 
 footer {
@@ -140,4 +142,25 @@ footer {
     color: var(--color-accent);
     padding: 10px;
     text-align: center;
+}
+
+i:hover {
+    animation-name: movement;
+    animation-duration: 500ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes movement {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    div a {
+        width: 400px;
+    }
 }
